@@ -1,0 +1,151 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: -12px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav_item {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  color: red;
+  text-decoration: underline;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.item {
+  border: solid 1px rgb(97, 95, 95);
+  border-radius: 10px;
+  width: 25%;
+  height: 40%;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+ul {
+  display: inline-block;
+  text-align: justify;
+}
+
+li {
+  text-align: left;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.704);
+  padding: 5px 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 16px;
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0450a1;
+}
+
+.item:hover {
+  box-shadow: 7px 7px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#foot {
+  padding: 25px;
+  text-align: center;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_item {
+  padding: 0px 2rem;
+}
+
+#footer_line {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 50px 0;
+  color: rgba(0, 0, 0, 0.707);
+}
+
+#email_lbl {
+  padding: 20px 20px 0 20px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.608);
+}
+
+#email_inp {
+  padding: 0.7rem 5rem 0.7rem 1rem;
+  margin: 0 0 1rem 2rem;
+  border-radius: 10px;
+}
+
+#email_smt {
+  padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  margin-left: -20px;
+  color: white;
+  background-color: #1f8bff;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  .container,
+  .footer_container {
+    flex-direction: column;
+  }
+  .item {
+    width: 90%;
+  }
+}
