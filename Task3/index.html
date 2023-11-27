@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="con">
+
+    <form action="" method="" class="form">
+
+      <h3> REGISTRATION FORM</h3>
+
+      <br>
+
+      <div class="add flex">
+        <label class="label">First Name</label>
+        <input name="firstName" type="text" placeholder="Enter First Name" class="input" required>
+      </div>
+      <div class="add flex">
+        <label class="label">Last Name</label>
+        <input name="Last Name" type="text" placeholder="Enter Last Name" class="input" required>
+      </div>
+      <div class="add flex">
+        <label class="label">Password</label>
+        <input name="password" type="password" placeholder="Enter Password" class="input" required>
+      </div>
+      <div class="add flex">
+        <label class="label">Confirm Password</label>
+        <input name="con_password" type="password" placeholder="Enter Password again" class="input" required>
+      </div>
+      <div class="add flex">
+        <label class="label">Date Of Birth</label>
+        <input name="dob" class="input" type="date" placeholder="dd-mm-yyyy">
+      </div>
+      <div class="add flex">
+        <label class="label">Gender</label>
+        <div class="option">
+          <input type="radio" value="male" name="sex"> Male
+          <input type="radio" value="female" name="sex"> Female
+          <input type="radio" value="other" name="sex"> Other
+        </div>
+      </div>
+      <div class="option">
+        <input type="checkbox" required> I accept all the <a href="">terms & Conditions</a>.
+      </div>
+      <input id="submit" class="btn" type="submit" value="Register">
+    </form>
+  </div>
+</body>
+
+</html>
