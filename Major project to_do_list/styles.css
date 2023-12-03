@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4d0f5f);
+  color: rgb(16, 42, 66);
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+h3 {
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "comic sans ms", roboto, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.section {
+  padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+.section-center {
+  background: rgb(179, 179, 255);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #062d0f;
+  background: #86f09f;
+}
+.form h3 {
+  color: rgb(5, 50, 82);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+#work {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: rgb(235, 247, 255);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: rgb(97, 126, 153);
+}
+#work::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(97, 125, 152);
+}
+.submit-btn {
+  background: rgb(165, 213, 248);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  content: #49a6e9;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background: #49a6e9;
+  color: #fff;
+}
+
+.container {
+  margin-top: 2rem;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  background-color: rgb(190, 190, 255);
+}
+.tasks:hover {
+  color: rgb(97, 125, 152);
+  background-color: rgb(223, 225, 252);
+}
+.tasks :hover .title {
+  color: rgb(97, 125, 152);
+}
+.title {
+  margin: auto 0;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0 0.15rem;
+}
+.edit-btn {
+  color: rgb(51, 124, 59);
+}
+.edit-btn:hover {
+  color: rgb(6, 55, 10);
+}
+.delete-btn {
+  color: rgb(245, 0, 0);
+}
+.delete-btn:hover {
+  color: rgb(152, 22, 22);
+}
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: #fff1f3;
+  border: 1px solid rgb(183, 3, 3);
+  border-radius: 1rem;
+  color: rgb(255, 0, 0);
+  margin: 0 auto;
+  font-size: 0.85rem;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+  margin-top: 1.25rem;
+}
+.clear-btn:hover {
+  color: rgb(214, 20, 20);
+  background-color: #f8d7da;
+}
