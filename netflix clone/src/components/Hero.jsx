@@ -28,11 +28,12 @@ const Hero = () => {
   const { title, backdrop_path, release_date, overview } = movie;
 
   return (
-    <div className="w-full h-[350px] lg:h-[550px]">
+    <div className="w-full relative h-[350px] lg:h-[550px] ">
+      <div className="absolute top-0 bottom-0 w-full bg-gradient-to-r from-slate-900 to-transparent"></div>
       <div className="w-full h-full">
-        <div className="absolute w-full   bg-gradient-to-r from-black" />
+        <div className="absolute w-full" />
         <img
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-top "
           src={createImgUrl(backdrop_path, "original")}
           alt={title}
         />
